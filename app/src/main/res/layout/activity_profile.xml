@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <!-- Page title at the very top -->
+    <TextView
+        android:id="@+id/textViewPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Profile"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- User image and name aligned in center -->
+    <ImageView
+        android:id="@+id/imageUser"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewPageTitle"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/harith" />
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="User : Harith Dhiyauddin"
+        android:textSize="16sp" />
+
+    <!-- Event History box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewUserName"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/box_background">
+
+        <TextView
+            android:id="@+id/textViewEventHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event History"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Bulleted list for event history -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="• SALAM Scrabble Challenge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• AG Tech International Expo 2024" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• HypnoBirthing Workshop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Febrero One Piece Treasure Cup" />
+    </LinearLayout>
+
+    <!-- Navigation bar at the very bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnHomepage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Homepage"
+            android:onClick="openHomepage" />
+
+        <Button
+            android:id="@+id/btnFindEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Find Event"
+            android:onClick="openFindEvent" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:onClick="openProfile" />
+    </LinearLayout>
+</RelativeLayout>

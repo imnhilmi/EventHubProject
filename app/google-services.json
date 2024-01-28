@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332355205071",
+    "project_id": "eventhub-13c3c",
+    "storage_bucket": "eventhub-13c3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332355205071:android:cfa4d92ac006222adc84ba",
+        "android_client_info": {
+          "package_name": "com.example.eventhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOog89LNfciUxQa4QXWcMawJBraef9vv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Event1">
+
+    <!-- Page title at the very top -->
+    <TextView
+        android:id="@+id/textViewPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Event Details"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Event details -->
+    <TextView
+        android:id="@+id/textViewEventDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPageTitle"
+        android:layout_marginTop="16dp"
+        android:text="Event : AG Tech International Expo 2024\nType : Innovation\nTime : 9:00AM - 10:00PM\nVenue : IDCC Ideal Convention Centre, Shah Alam"
+        android:textSize="16sp" />
+
+    <!-- Buttons for "Locate Me" and "Attend Event" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewEventDetails"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLocateMe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Locate Me"
+            android:onClick="locateMe" />
+
+        <Button
+            android:id="@+id/btnAttendEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attend Event"
+            android:onClick="attendEvent" />
+    </LinearLayout>
+
+    <!-- Navigation bar at the very bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnHomepage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Homepage"
+            android:onClick="openHomepage" />
+
+        <Button
+            android:id="@+id/btnFindEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Find Event"
+            android:onClick="openFindEvent" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:onClick="openProfile" />
+    </LinearLayout>
+</RelativeLayout>

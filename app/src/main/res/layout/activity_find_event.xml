@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindEvent">
+
+    <!-- Page name at the very top -->
+    <TextView
+        android:id="@+id/textViewPageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Find Event"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Buttons for the events -->
+    <Button
+        android:id="@+id/btnEvent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPageName"
+        android:layout_marginTop="16dp"
+        android:text="SALAM Scrabble Challenge"
+        android:onClick="openEvent1" />
+
+    <Button
+        android:id="@+id/btnEvent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEvent1"
+        android:layout_marginTop="16dp"
+        android:text="AG Tech International Expo 2024"
+        android:onClick="openEvent2" />
+
+    <Button
+        android:id="@+id/btnEvent3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEvent2"
+        android:layout_marginTop="16dp"
+        android:text="HypnoBirthing Workshop"
+        android:onClick="openEvent3" />
+
+    <Button
+        android:id="@+id/btnEvent4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEvent3"
+        android:layout_marginTop="16dp"
+        android:text="Febrero One Piece Treasure Cup"
+        android:onClick="openEvent4" />
+
+    <!-- Floating Action Button at the top right corner -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabQRScanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:onClick="openQRScanner"/>
+
+    <!-- Navigation bar at the very bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnHomepage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Homepage"
+            android:onClick="openHomepage" />
+
+        <Button
+            android:id="@+id/btnFindEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Find Event"
+            android:onClick="openFindEvent" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:onClick="openProfile" />
+    </LinearLayout>
+</RelativeLayout>
